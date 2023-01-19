@@ -3,10 +3,6 @@ import sys
 import pandas as pd
 import numpy as np
 
-# potential init vars: folder_list, dflist, buffer, axon
-# seems like experiment_dir is the object class
-# no trailing slashes in user-specified paths? 
-
 def filetiffs(experiment_dir):
 	# take background subtracted tiffs in experiment_dir/tiff and sorts them into folders for KymoClear
 	for item in sorted(os.listdir(experiment_dir+'/tiff')):
